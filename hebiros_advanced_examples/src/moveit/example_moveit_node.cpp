@@ -16,11 +16,11 @@ void feedback_callback(sensor_msgs::JointState data) {
 int main(int argc, char **argv) {
 
   //Initialize ROS node
-  ros::init(argc, argv, "example_moveit_node");
+  ros::init(argc, argv, "scara_moveit_node");
   ros::NodeHandle n;
   ros::Rate loop_rate(200);
 
-  std::string group_name = "x_demo";
+  std::string group_name = "scara";
 
   //Create a client which uses the service to create a group
   //The urdf for x_demo must have already been set in the robot_description parameter
